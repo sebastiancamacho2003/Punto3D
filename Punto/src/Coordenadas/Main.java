@@ -27,7 +27,7 @@ public class Main {
 			System.out.println("(" + x1 + "," + y1 + "," + z1 + ")(" + x2 + "," + y2 + "," + z2 + ")");
 			Punto3D p1 = new Punto3D(x1, y1, z1);
 			Punto3D p2 = new Punto3D(x2, y2, z2);
-			System.out.println("Ingrese el aumento: ");
+			System.out.println("Ingrese el aumento en las dos coordenadas: ");
 			System.out.println("x= ");
 			sum1 = dato.nextDouble();
 			System.out.println("y= ");
@@ -50,9 +50,9 @@ public class Main {
 			double dis = dato1.distanciaPunto(dato2);
 			double origen1 = dato1.distanciaPunto();
 			double origen2 = dato2.distanciaPunto();
-			System.out.println("La distancia del punto1 al punto 2 es: " + (double) Math.round(dis * 100d) / 100d);
-			System.out.println("La distancia del punto1 al punto 1 es: " + (double) Math.round(origen1 * 100d) / 100d);
-			System.out.println("La distancia del punto1 al punto 2 es: " + (double) Math.round(origen2 * 100d) / 100d);
+			System.out.println("La distancia del punto 1 al punto 2 es: " + (double) Math.round(dis * 100d) / 100d);
+			System.out.println("La distancia del punto 1 al origen es: " + (double) Math.round(origen1 * 100d) / 100d);
+			System.out.println("La distancia del punto 2 al origen es: " + (double) Math.round(origen2 * 100d) / 100d);
 			break;
 		case 2:
 			
@@ -67,7 +67,7 @@ public class Main {
 			System.out.println("(" + x1 + "," + y1 + ")(" + x2 + "," + y2 + ")");
 			Punto j1 = new Punto(x1, y1);
 			Punto j2 = new Punto(x2, y2);
-			System.out.println("Ingrese el aumento: ");
+			System.out.println("Ingrese el aumento de corrdenadas: ");
 			System.out.println("x= ");
 			sum1 = dato.nextDouble();
 			System.out.println("y= ");
@@ -86,12 +86,12 @@ public class Main {
 			double dist = datoa1.distanciaPunto(datoa2);
 			double origena1 = datoa1.distanciaPunto();
 			double origena2 = datoa2.distanciaPunto();
-			System.out.println("La distancia del punto1 al punto 2 es: " + (double) Math.round(dist * 100d) / 100d);
-			System.out.println("La distancia del punto1 al punto 2 es: " + (double) Math.round(origena1 * 100d) / 100d);
-			System.out.println("La distancia del punto1 al punto 2 es: " + (double) Math.round(origena2 * 100d) / 100d);
+			System.out.println("La distancia del punto 1 al punto 2 es: " + (double) Math.round(dist * 100d) / 100d);
+			System.out.println("La distancia del punto 1 al origen es: " + (double) Math.round(origena1 * 100d) / 100d);
+			System.out.println("La distancia del punto 2 al origen es: " + (double) Math.round(origena2 * 100d) / 100d);
 			break;
 			default:
-				 System.out.println("Escogio una opcion invalida, cerrando programa...");
+				 System.out.println("Escogio una opcion invalida...");
 		}
 	}
 }
